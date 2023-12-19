@@ -1,5 +1,15 @@
+<p [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+
+
+
+<!-- <label>Server Name</label>
+<input
+  type="text" 
+  class="form-control "
+  (input)="onUpdateServerName($event)">
+  <p>{{serverName}}</p>
 <button 
   class="btn btn-primary"
-  [disabled]="!allowNewServer">Add Server</button>
-<app-server></app-server>
-<app-server></app-server>
+  [disabled]="!allowNewServer"
+  (click)="onCreateServer()">Add Server</button>
+  <p>{{serverCreationStatus}}</p> -->

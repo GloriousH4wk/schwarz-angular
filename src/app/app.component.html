@@ -4,6 +4,15 @@
       <h3>I'm in the AppComponent!</h3>
       <hr>
       <app-servers></app-servers>
+
+      <hr>
+      <br>
+
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{ username }}</p>
+      <button (click)="this.username = ''" class="btn btn-primary" [disabled]="username === ''">Reset User</button>
+
     </div>
   </div>
 </div>
